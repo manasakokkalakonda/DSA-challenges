@@ -1,3 +1,6 @@
+//100Daysofcode
+//Day8
+
 // 1. Count Pairs with Given Sum
 function countPairsWithSum(arr, target) {
   let left = 0;
@@ -36,4 +39,5 @@ function moveZeroes(arr) {
   return arr;
 }
 console.log(moveZeroes([0, 1, 0, 3, 12])); //expected Output: [1, 3, 12, 0, 0]
+
 
