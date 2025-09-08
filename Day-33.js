@@ -1,7 +1,6 @@
 //100Daysofcode
 //Day33
 
-// Node class
 class TaskNode {
   constructor(name) {
     this.name = name;
@@ -9,13 +8,11 @@ class TaskNode {
   }
 }
 
-// Linked List class
 class TaskManager {
   constructor() {
     this.head = null;
   }
 
-  // Add task at end
   addTaskAtEnd(name) {
     const newNode = new TaskNode(name);
     if (!this.head) {
@@ -29,14 +26,12 @@ class TaskManager {
     current.next = newNode;
   }
 
-  // Add task at beginning
   addTaskAtBeginning(name) {
     const newNode = new TaskNode(name);
     newNode.next = this.head;
     this.head = newNode;
   }
 
-  // Delete task by name
   deleteTaskByName(name) {
     if (!this.head) return;
 
@@ -55,7 +50,6 @@ class TaskManager {
     }
   }
 
-  // Delete task by position (1-based index)
   deleteTaskByPosition(pos) {
     if (pos < 1 || !this.head) return;
 
@@ -77,7 +71,6 @@ class TaskManager {
     }
   }
 
-  // Show tasks
   showTasks() {
     let current = this.head;
     const tasks = [];
@@ -88,9 +81,7 @@ class TaskManager {
     console.log(tasks.join(" → "));
   }
 }
-
 const manager = new TaskManager();
-
 manager.addTaskAtEnd("Finish Homework");
 manager.addTaskAtEnd("Buy Groceries");
 manager.addTaskAtBeginning("Morning Workout");
@@ -101,3 +92,4 @@ manager.showTasks(); // Morning Workout → Finish Homework
 
 manager.deleteTaskByPosition(2);
 manager.showTasks(); // Finish Homework
+
