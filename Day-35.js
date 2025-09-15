@@ -1,7 +1,6 @@
 //100Daysofcode
 //Day35
 
-
 class PhotoNode {
   constructor(photoName) {
     this.photo = photoName;
