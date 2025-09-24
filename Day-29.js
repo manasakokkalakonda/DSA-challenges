@@ -90,4 +90,5 @@ list.insertAtPosition(10, 1);
 list.insertAtPosition(20, 2);
 list.insertAtPosition(30, 2);
 list.deleteAtPosition(1);
+
 list.printList(); // Output: 20 -> 30
