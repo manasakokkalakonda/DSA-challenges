@@ -84,7 +84,7 @@ class LinkedList {
     console.log(result);
   }
 }
-// 🔹 Sample Execution
+
 const list = new LinkedList();
 list.insertAtPosition(10, 1);
 list.insertAtPosition(20, 2);
