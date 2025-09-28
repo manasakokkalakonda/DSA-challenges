@@ -14,7 +14,6 @@ class RoundRobinScheduler {
     this.tail = null;
   }
 
-  // Add task at the end
   addTaskEnd(name) {
     const newNode = new TaskNode(name);
     if (!this.head) {
@@ -28,7 +27,6 @@ class RoundRobinScheduler {
     }
   }
 
-  // Add task at the beginning
   addTaskBeginning(name) {
     const newNode = new TaskNode(name);
     if (!this.head) {
@@ -42,7 +40,6 @@ class RoundRobinScheduler {
     }
   }
 
-  // Display tasks once
   displayTasks() {
     if (!this.head) {
       console.log("No tasks in the scheduler.");
@@ -57,7 +54,6 @@ class RoundRobinScheduler {
     console.log(result.join(" -> "));
   }
 
-  // Simulate one round of execution
   simulateRound() {
     if (!this.head) {
       console.log("No tasks to execute.");
@@ -71,7 +67,6 @@ class RoundRobinScheduler {
   }
 }
 
-// Example usage
 const scheduler = new RoundRobinScheduler();
 scheduler.addTaskEnd("Task1");
 scheduler.addTaskEnd("Task2");
